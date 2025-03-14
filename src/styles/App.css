@@ -1,0 +1,82 @@
+.app-container {
+  text-align: center;
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.app-title {
+  font-family: 'Audiowide', sans-serif;
+  font-size: 2rem;
+  color: #f8f8ff;
+  margin-bottom: 20px;
+}
+
+/* Tab Buttons */
+.tab-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tab-buttons button {
+  background: linear-gradient(135deg, #0b74e5, #09238b);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  margin: 5px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tab-buttons button:hover {
+  background: linear-gradient(135deg, #09238b, #0b74e5);
+  transform: scale(1.05);
+}
+
+.tab-buttons .active {
+  background: #f8f8ff;
+  color: #0b74e5;
+  font-weight: bold;
+}
+
+.homepage-content.blur {
+  filter: blur(5px); 
+  transition: filter 0.3s ease-in-out; 
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  z-index: 1001;
+  animation: fadeIn 0.3s ease; 
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
